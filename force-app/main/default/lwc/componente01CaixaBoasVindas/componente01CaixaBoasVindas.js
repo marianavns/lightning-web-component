@@ -12,6 +12,13 @@ export default class HelloWorld extends LightningElement {
 
     /* captura tudo o que é escrito no input em tempo real */
         capturaInput(event) {
-            this.nomeInserido = event.target.value;
+            this.nomeInserido = event.target.value; 
+            
+            /* 
+            O termo "event" carrega um monte de informações do elemento no momento que o evento está acontecendo
+            como o valor do elemento na linha acima 
+            basta usar "event.target.[atributo que você quer capturar]
+            */
+           
         }
 }
