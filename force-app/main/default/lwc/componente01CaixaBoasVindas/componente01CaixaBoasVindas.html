@@ -1,6 +1,14 @@
 <template>
     <lightning-card title="Componente 01 - Caixa de Boas Vindas" icon-name="custom:custom14">
-        <div>
+        <lightning-modal-header>
+            <ul class="slds-text-align_left">
+                <li>Eventos (onclick e onchange)</li>
+                <li>Captura de Valor de input</li>
+                <li>Exibição de valores do JS em tela</li>
+                <li>Inicialização de variáveis</li>
+            </ul>
+        </lightning-modal-header>
+        <div class="slds-m-around_medium">
             <p>Olá, {nomeInserido}!</p>
             <lightning-input 
                 label="Nome" 
