@@ -1,0 +1,22 @@
+<template>
+    <lightning-card title="Componente 02 - Buscador de Produtos">
+        <lightning-modal-header>
+            <ul class="slds-text-align_left">
+                <li>Eventos (onchange)</li>
+                <li>Captura de Valor de input</li>
+                <li>Exibição de valores do JS em tela</li>
+                <li>Inicialização de variáveis</li>
+            </ul>
+        </lightning-modal-header>
+        <lightning-input
+            type="text"
+            label="Procure produtos no geral"
+            onchange={procuraProdutosNaLista}
+        >
+        </lightning-input>  
+        <section>
+            Produtos retornados: {produtosRetornados}
+        </section>
+    </lightning-card>
+    
+</template>
