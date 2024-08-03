@@ -11,13 +11,10 @@ export default class BuscadorDeProdutos extends LightningElement {
     procuraProdutosNaLista(event){
         
         this.produtoBuscado = event.target.value // captura do input
+        this.produtosRetornados = ['']
               
         if (this.produtoBuscado != ''){
             this.produtosRetornados = this.listaProdutos.filter(item => item.includes(this.produtoBuscado)); // busca de acordo com input
-        }
-
-        if (this.produtoBuscado == ''){
-            this.produtosRetornados = ['']
         }
 
         if (this.produtosRetornados.length == 0){
