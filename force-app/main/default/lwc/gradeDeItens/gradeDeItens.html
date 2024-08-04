@@ -6,6 +6,20 @@
             </ul>
         </lightning-modal-header>
         <div class="container">
+
+            <!--   Para cada registro em **produtos**, guarde as informações em **produtoUnico**   -->
+            <template for:each={produtos} for:item="produtoUnico">
+
+                <!--   linha obrigatória, pois vamos usar uma tag dentro de um for   -->
+                <section key={produtoUnico.id}>
+
+                    <!--  ...imprima o título e a imagem   -->
+                    {produtoUnico.title}
+                    <br> 
+                    <img src={produtoUnico.img} class="product-img"/>
+
+                </section>
+            </template>
         </div>
     </lightning-card>
 </template>
