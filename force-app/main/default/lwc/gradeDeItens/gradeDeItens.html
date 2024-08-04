@@ -11,8 +11,8 @@
             <template for:each={produtos} for:item="produtoUnico">
 
                 <!--   linha obrigatória, pois vamos usar uma tag dentro de um for   -->
-                <section key={produtoUnico.id}>
-
+                <section 
+                    key={produtoUnico.id}>
                     <!--  ...imprima o título e a imagem   -->
                     {produtoUnico.title}
                     <br> 
