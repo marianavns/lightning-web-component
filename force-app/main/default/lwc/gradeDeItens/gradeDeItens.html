@@ -11,15 +11,11 @@
             <template for:each={produtos} for:item="produtoUnico">
 
                 <!--   linha obrigatória, pois vamos usar uma tag dentro de um for   -->
-                <section 
-                    key={produtoUnico.id}
-                >
-                    <!--  ...imprima o título e a imagem   -->
-                    {produtoUnico.title}
-                    <br> 
-                    <img src={produtoUnico.img} class="product-img"/>
-
-                </section>
+                <c-item-simples 
+                    key={produtoUnico.id} 
+                    product={produto}
+		>
+                </c-item-simples>
             </template>
         </div>
     </lightning-card>
