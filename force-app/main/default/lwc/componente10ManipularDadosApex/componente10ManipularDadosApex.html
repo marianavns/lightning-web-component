@@ -6,5 +6,20 @@
                 <li>Capturar dados a partir do Salesforce</li>
             </ul>
         </lightning-modal-header>
+
+
+        <!-- se o JS capturou registros...-->
+            <template if:true={accounts}>
+            <!-- eles vão para o componente filho -->
+                <c-grade-de-itens
+                    records={accounts}
+                >
+                </c-grade-de-itens>
+            </template>
+            <template if:true={error}>
+                <p>Error: {error.body.message}</p>
+            </template>
+
+
     </lightning-card>
 </template>
