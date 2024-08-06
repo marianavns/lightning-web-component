@@ -2,12 +2,12 @@
 
 a) Como os dados serão "puxados" da org?  
 b) Que componente receberá os dados manipuláveis?  
-c) O que cada componente vai fazer?
+c) O que cada componente vai fazer?  
 d) Que informações cada componente precisa para trabalhar?  
 
 ![Esquema do componente](.imagens/componente-esquema.jpg)
 
-a) *Como os dados serão capturados da org?* 
+a) *Como os dados serão capturados da org?*   
 Classe Apex **Account Controller**  
 
 b) *Que componente receberá os dados manipuláveis?*  
