@@ -1,0 +1,18 @@
+<template>
+    <lightning-card>
+        <div class="container">
+
+        <!--   Para cada registro em **records** vindos do pai, guarde as informações em **record**...   -->
+        <!--   ...pois "record" é o que o componente filho desse está esperando   -->
+            <template for:each={records} for:item="record">
+
+            <!-- (a linha key é obrigatória, pois vamos usar uma tag dentro de um for) -->
+                <c-item-simples 
+                    key={record.id} 
+                    record={record} 
+		>
+                </c-item-simples>
+            </template>
+        </div>
+    </lightning-card>
+</template>
